@@ -13,19 +13,29 @@
     
 
 
-<header class="col-1">
+<header class="col-1 md: gride grid-cols-9 md:w-full">
 
 <section>
 
-<div class=" flex col-1  mt-4 gap-3">
+<div class=" flex col-1 md: gride grid-cols-9  mt-4 gap-3 justify-center w-full">
 
-<div class="ml-5"><i class="ri-menu-line"></i></div> 
-<div class=""><i class="ri-search-line  "></i></div>
+<div class="ml-5 md:hidden"><i class="ri-menu-line"></i></div> 
+<div class="md:hidden w-full flex justify-end"><i class="ri-search-line  "></i></div>
+<div class="hidden sm:block bg-green-500 w-50 h-5 md:flex justify-between rounded-2xl   "><input type="text" placeholder="Rechercheez" 
+  class="hidden sm:block">
+  <i class="ri-search-line  "></i></div>
+  <div class="hidden md:flex gap-4  justify-end ">
+<button class="hidden sm:block">Home</button>
+<button class="hidden sm:block">Home</button>
+<button class="hidden sm:block">Home</button>
+<button class="hidden sm:block">Home</button>
+</div>
+
 
 </div>
-<p class="mt-5 ms-4">Blogger Of The Weak</p>
+<p class="mt-5 ms-4 sm:text-center lg:text-center sm:font-bold lg:">Blogger Of The Weak</p>
 
-<div class="  grid grid-cols-5 mt-5">
+<div class="  grid grid-cols-5 mt-5 sm:">
 
 <div><img src="Blg1.jpg" alt="Blogger Of The Weak" class=" ml-2 rounded-full w-15 h-15">
 <p class="pl-3">Jesfina<br>Hudson </p></div>
@@ -113,7 +123,7 @@
  </section>
  <section>
 
-<div class=" fixed bottom-0 left-0 ml-4 mt-10 bg-white w-90 h-20 rounded-2xl shadow-2xl sm:static ">
+<div class=" fixed bottom-0 left-0 ml-4 mt-10 bg-white w-90 h-20 rounded-2xl shadow-2xl sm:static lg:static">
   <div class="flex gap-6 pt-1 mt-4 w-20 h-10 rounded-2xl bg-green-700"><img src="home-5-line.png" alt="homme" class="pl-6">
   
   <div class="pl-10">
