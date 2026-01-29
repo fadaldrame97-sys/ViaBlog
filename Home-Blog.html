@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
     
    </head>
-<body class="bg-gray-150 overflow-x-hidden">
+<body class="bg-gray-150 overflow-x-hidden min-h-screen">
     
 
 
@@ -17,11 +17,11 @@
 
 <section>
 
-<div class=" flex col-1 md: gride grid-cols-9  mt-4 gap-3 justify-center w-full">
+<div class=" flex col-1 sm: gride grid-cols-9  mt-4 gap-3 justify-center w-full">
 
-<div class="ml-5 md:hidden"><i class="ri-menu-line"></i></div> 
-<div class="md:hidden w-full flex justify-end"><i class="ri-search-line  "></i></div>
-<div class="hidden sm:block bg-emerald-100 w-50 h-5 md:flex justify-between rounded-2xl   "><input type="text" placeholder="Rechercheez" 
+<div class="ml-5 md:hidden md:ml-0"><i class="ri-menu-line"></i></div> 
+<div class="sm:hidden w-full flex justify-end"><i class="ri-search-line  "></i></div>
+<div class="hidden  bg-emerald-100 w-50 h-5 sm:flex justify-between rounded-2xl   "><input type="text" placeholder="Rechercheez" 
   class="hidden sm:block">
   <i class="ri-search-line  "></i></div>
   <div class="hidden md:flex gap-6  justify-end ">
@@ -76,27 +76,31 @@
 <div class="mt-5 md:flex-column md:justify-center  md:items-center-center sm:pt-5">
 
 
-  <div class="sm:flex  sm:w-full justify-center sm:ml-35">
-  <div><img src="River.jpg" alt="" class=" ml-2 rounded-t-xl w-[340px] h-[250px] justify-center sm:w-[450px] sm:h-[450px] md:w-[450px] md:h-[450px] ">
+  <div class="md:flex  sm:w-full md:w-400 justify-center md:ml-35 md:gap-1 sm:mt-5 sm:ml-4 ">
+  <div class="md:h-[450px] sm:w-[350px] "><img src="River.jpg" alt="" 
+    class=" ml-2 rounded-t-xl w-[340px] h-[250px] sm:w-[450px] sm:h-[450px] md:w-[650px]
+     md:h-[450px] sm:ml-35 md:ml-0 sm:rounded-xl sm:object-cover sm:block">
   <div class="hidden ml-8 sm:flex sm:w-full pl-10 font-bold pt-5 font-stretch-100% ">
-  <p class="sm:text-center">Yellow River</p>
-  <p>By lan Jacobson</p>
+  <p class="sm:text-center ">Yellow River</p>
+  <p class="sm:text-center sm:pl-4">By lan Jacobson</p>
 </div>
   
   </div> 
-<div class="hidden sm:block sm:w-full">
-<div class="flex gap-3 ml-5 shadow-lg sm:shadow-none  ">
+<div class="hidden sm:flex  sm:h-100 ">
+<div class="flex gap-3 ml-5 shadow-lg sm:shadow-none sm:ml-0 md:gap-1 ">
 <div class="flex-row justify-end bg-[url('ice.jpg')] bg-cover w-[170px] h-40 rounded-2xl sm:h-[450px] sm:w-[350px] "> 
   <img src="Love.png" alt="j'adore" class="ml-35 sm:ml-80 ">
 </div>
 <div class="flex justify-end bg-[url('echel.jpg')] bg-cover w-[170px] h-40 rounded-2xl sm:h-[450px] sm:w-[350px] ">
 <div class="flex items-center justify-centre bg-green-500 rounded-full w-15 h-15">
   <img src="upload_.png" alt="" class="ml-4"></div>
+  
 
 </div>
 
+
 </div>
-<div class="pl-70  flex gap-5 font-bold pt-5 font-stretch-100%">
+<div class="pl-70  flex gap-5 font-bold pt-5 font-stretch-100% ">
  <i class="ri-map-pin-2-line"></i>
  <p>china</p>
  <i class="ri-history-fill"></i>
@@ -160,7 +164,7 @@
    
  <section>
 <div>
-<div class="sm:hidden flex gap-3 ml-5 shadow-lg">
+<div class="sm:hidden flex gap-3 ml-5 shadow-lg sm:ml-0">
 <div class="flex-row justify-end bg-[url('ice.jpg')] bg-cover w-[170px] h-40 rounded-2xl "> 
   <img src="Love.png" alt="j'adore" class="ml-35 ">
 </div>
@@ -184,11 +188,11 @@
  </section>
  <section>
 
-<div class=" fixed bottom-0 left-0 ml-4 mt-10 bg-white w-90 h-20 rounded-2xl shadow-2xl sm:static lg:static sm:w-full sm:flex sm:justify-center sm:-ml-20 ">
-  <div class="flex gap-6 pt-1 mt-4 w-20 h-10 rounded-2xl bg-green-700 sm:ml-0  ">
-    <img src="home-5-line.png" alt="homme" class="pl-6">
+<div class=" fixed bottom-0 left-0 ml-4 mt-10 bg-white w-90 h-20 rounded-2xl shadow-2xl  md:static sm:w-full sm:flex sm:justify-center md:justify-center sm:-ml-20 md:w-400  ">
+  <div class="flex gap-6 pt-1 mt-4  sm:ml-0 md:justify-center">
+    <img src="home-5-line.png" alt="homme" class="pl-6 w-20 h-10 rounded-2xl bg-green-700">
   
-  <div class="pl-10 ">
+  <div class="">
     <img src="location_on.png" alt="location">
     <p>Location</p>
   </div>
