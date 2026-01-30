@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogVia</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="Script.js" defer></script>
+     
+<script src="https://cdn.tailwindcss.com"></script>
+   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
     
    </head>
@@ -13,23 +15,27 @@
     
 
 
-<header class="col-1 md: gride grid-cols-9 md:w-full">
+<header class=" md: gride grid-cols-9 md:w-full">
 
-<section>
 
-<div class=" flex col-1 sm: gride grid-cols-9  mt-4 gap-3 justify-center w-full">
 
-<div class="ml-5 md:hidden md:ml-0"><i class="ri-menu-line"></i></div> 
+<div class=" flex col-1 sm:  grid-cols-9  mt-4 gap-3 justify-center w-full">
+
+<button aria-label="Ouvrir le menu" class="ml-5 md:hidden">
+  <i class="ri-menu-line" aria-hidden="true"></i>
+</button>
 <div class="sm:hidden w-full flex justify-end"><i class="ri-search-line  "></i></div>
-<div class="hidden  bg-emerald-100 w-50 h-5 sm:flex justify-between rounded-2xl   "><input type="text" placeholder="Rechercheez" 
+<div class="hidden  bg-emerald-100 w-50 h-5 sm:flex justify-between rounded-2xl   ">
+  <label for="search" class="sr-only">Rechercher un article</label>
+  <input type="text" placeholder="Rechercheez" 
   class="hidden sm:block">
   <i class="ri-search-line  "></i></div>
-  <div class="hidden md:flex gap-6  justify-end ">
-<button class="hidden sm:block bg-emerald-100 rounded-lg ">Home</button>
-<button class="hidden sm:block  bg-emerald-100 rounded-lg">Blog</button>
-<button class="hidden sm:block  bg-emerald-100 rounded-lg">détails</button>
-<button class="hidden sm:block  bg-emerald-100 rounded-lg">Profile</button>
-</div>
+ <nav aria-label="Navigation principale" class="hidden md:flex gap-6 justify-end">
+<a href="Home-Blog.html"  class="hidden sm:block bg-emerald-100 rounded-lg text-black ">Home</a> 
+<a href="Blogger.html"  class="hidden sm:block bg-emerald-100 rounded-lg text-black ">Blogger</a> 
+<a href="Profile.html " class="hidden sm:block bg-emerald-100 rounded-lg text-black ">Profile</a> 
+<a href="Détail.html " class="hidden sm:block bg-emerald-100 rounded-lg text-black ">Détails</a> 
+</nav>
 
 
 </div>
@@ -54,16 +60,15 @@
 </div>
 
 </div>
-</div>
+
 <div class="sm:w-full ">
 <p class="mt-5 ms-4 font-semibold sm:font-bold sm:text-center">What Do You Want To Read</p>
 </div>
-</section>
+
 </header>
 
 <main>
 
-<section>
   <div class="sm:bg-blue-100 sm:w-full sm:h-[600px] sm:items-center">
 <div class=" flex ml-3 mt-6 gap-2 sm:w-full sm:items-center sm:justify-center sm:pt-5">
 <div class="bg-green-500"><p class=" w-[30px] border border-black rounded text-center ">All</p></div>
@@ -77,7 +82,7 @@
 
 
   <div class="md:flex  sm:w-full md:w-400 justify-center md:ml-35 md:gap-1 sm:mt-5 sm:ml-4 ">
-  <div class="md:h-[450px] sm:w-[350px] "><img src="River.jpg" alt="" 
+  <div class="md:h-[450px] sm:w-[350px] "><img src="River.jpg" alt="Photo du Yellow River en Chine" 
     class=" ml-2 rounded-t-xl w-[340px] h-[250px] sm:w-[450px] sm:h-[450px] md:w-[650px]
      md:h-[450px] sm:ml-35 md:ml-0 sm:rounded-xl sm:object-cover sm:block">
   <div class="hidden ml-8 sm:flex sm:w-full pl-10 font-bold pt-5 font-stretch-100% ">
@@ -89,7 +94,7 @@
 <div class="hidden sm:flex  sm:h-100 ">
 <div class="flex gap-3 ml-5 shadow-lg sm:shadow-none sm:ml-0 md:gap-1 ">
 <div class="flex-row justify-end bg-[url('ice.jpg')] bg-cover w-[170px] h-40 rounded-2xl sm:h-[450px] sm:w-[350px] "> 
-  <img src="Love.png" alt="j'adore" class="ml-35 sm:ml-80 ">
+  <img src="Love.png" alt="Pour vos favoris" class="ml-35 sm:ml-80 ">
 </div>
 <div class="flex justify-end bg-[url('echel.jpg')] bg-cover w-[170px] h-40 rounded-2xl sm:h-[450px] sm:w-[350px] ">
 <div class="flex items-center justify-centre bg-green-500 rounded-full w-15 h-15">
@@ -154,7 +159,7 @@
 </div>
 </div>
 
-</section>
+
 
     
    
@@ -162,7 +167,7 @@
 
 <footer >
    
- <section>
+
 <div>
 <div class="sm:hidden flex gap-3 ml-5 shadow-lg sm:ml-0">
 <div class="flex-row justify-end bg-[url('ice.jpg')] bg-cover w-[170px] h-40 rounded-2xl "> 
@@ -185,15 +190,17 @@
 
 
 
- </section>
- <section>
+ 
+ 
 
 <div class=" fixed bottom-0 left-0 ml-4 mt-10 bg-white w-90 h-20 rounded-2xl shadow-2xl  md:static sm:w-full sm:flex sm:justify-center md:justify-center sm:-ml-20 md:w-400  ">
   <div class="flex gap-6 pt-1 mt-4  sm:ml-0 md:justify-center">
     <img src="home-5-line.png" alt="homme" class="pl-6 w-20 h-10 rounded-2xl bg-green-700">
   
   <div class="">
-    <img src="location_on.png" alt="location">
+   <a href="Home-Blog.html" aria-label="Accueil">
+  <img src="home-5-line.png" alt="" aria-hidden="true">
+</a>
     <p>Location</p>
   </div>
   <div class="">
@@ -207,7 +214,7 @@
   </div>
 </div>
 
- </section>
+
 </footer>
 
 
