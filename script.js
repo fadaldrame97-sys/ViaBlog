@@ -32,5 +32,10 @@ const voyage = {
 
 voyages.push(voyage);
 
+  modal.classList.add("hidden");
+
+  
+  formDestination.reset();
+
 
 });
