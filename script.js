@@ -1,4 +1,4 @@
-let Voyages = [];
+let voyages = [];
 
 const destination= document.getElementById("YellowRIver");
 const titr=document.getElementById("lan");
