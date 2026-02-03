@@ -5,6 +5,23 @@ const titr=document.getElementById("lan");
 const img=document.getElementById("river");
 const cat=document.getElementById("ctg");
 
+
+// const voyage = {
+//   titre: document.getElementById("Titre").value,
+//   destination: document.getElementById("des").value,
+//   note: document.getElementById("note").value,
+//   categorie: document.getElementById("cat").value,
+//   image: document.getElementById("img").value
+// };
+
+
+
+
+const modal = document.getElementById("modal");
+const formDestination = document.getElementById("Destination_page");
+
+formDestination.addEventListener("submit", (event) => { event.preventDefault();
+
 const voyage = {
   titre: document.getElementById("Titre").value,
   destination: document.getElementById("des").value,
@@ -16,5 +33,4 @@ const voyage = {
 voyages.push(voyage);
 
 
-const modal = document.getElementById("modal");
-const formDestination = document.getElementById("Destination_page");
+});
