@@ -5,7 +5,7 @@ const titr=document.getElementById("lan");
 const img=document.getElementById("river");
 const cat=document.getElementById("ctg");
 
-const Voyage = {
+const voyage = {
   titre: document.getElementById("Titre").value,
   destination: document.getElementById("des").value,
   note: document.getElementById("note").value,
@@ -13,7 +13,7 @@ const Voyage = {
   image: document.getElementById("img").value
 };
 
-voyages.push(Voyage);
+voyages.push(voyage);
 
 
 const modal = document.getElementById("modal");
