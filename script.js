@@ -36,6 +36,7 @@ voyages.push(voyage);
 
   modal.classList.add("hidden");
 
+
   
   formDestination.reset();
 
@@ -45,29 +46,24 @@ voyages.push(voyage);
 
     titr.textContent = voyage.titre;
   destination.textContent = voyage.destination;
-  cat.textContent = voyage.categorie;
+  cat.textContent = voyage.categories;
   img.src = voyage.image;
   img.alt = voyage.titre;
 
-  // Fermer le modal et reset
+  
   modal.classList.add("hidden");
   formDestination.reset();
 
-  // 🔹 Vérification dans la console
-  console.log("voyages:", voyages);
 
+  console.log("voyages:", voyage);
+  afficherlesvoyages(voyage)
 });
 
-function afficherlesvoyages(){
-
-
-
-
-
-
-
-
-
-  
+function afficherlesvoyages(voyage){
+    titr.textContent = voyage.titre;
+  destination.textContent = voyage.destination;
+  cat.textContent = voyage.categorie;
+  img.src = voyage.image;
+  img.alt = voyage.titre;
 }
 
