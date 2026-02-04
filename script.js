@@ -56,7 +56,18 @@ voyages.push(voyage);
   // 🔹 Vérification dans la console
   console.log("voyages:", voyages);
 
-
-
 });
+
+function afficherlesvoyages(){
+
+
+
+
+
+
+
+
+
+  
+}
 
