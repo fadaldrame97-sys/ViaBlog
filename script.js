@@ -3,7 +3,7 @@ let voyages = [];
 const destination= document.getElementById("YellowRIver");
 const titr=document.getElementById("lan");
 const img=document.getElementById("river");
-const cat=document.getElementById("ctg");
+
 
 
 // const voyage = {
@@ -15,7 +15,7 @@ const cat=document.getElementById("ctg");
 // };
 
 
-console.log(titr);
+
 
 const modal = document.getElementById("modal");
 const formDestination = document.getElementById("Destination_page");
@@ -59,11 +59,15 @@ voyages.push(voyage);
   afficherlesvoyages(voyage)
 });
 
-function afficherlesvoyages(voyage){
+function afficherlesvoyages(){
     titr.textContent = voyage.titre;
   destination.textContent = voyage.destination;
   cat.textContent = voyage.categorie;
   img.src = voyage.image;
   img.alt = voyage.titre;
 }
+
+localStorage.setItem('voyages', JSON.stringify(voyages));
+
+
 

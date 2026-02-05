@@ -87,13 +87,16 @@
   <div class="ml-3 md:h-[450px] sm:w-[350px] "><img src="Images/river.jpg " alt="Photo du Yellow River en Chine" 
     id="river" class=" ml-2 rounded-t-xl w-[340px] h-[250px] sm:w-[450px] sm:h-[450px] md:w-[650px]
      md:h-[450px] sm:ml-35 md:ml-0 sm:rounded-xl sm:object-cover sm:block">
-     <div class="flex gap-3">
-   <button aria-label="Supprimez" onclick="SupprimerVoyage()">
+   <div class="flex gap-3">
+   <button onclick="SupprimezVoyage()" title="Supprimer" aria-label="Supprimez" class="cursor-pointer hover:scale-105 transition">
   <i class="ri-delete-bin-line"></i>
 </button>
-<button aria-label="Modifiez"  onclick="ModifierVoyage()">
+
+
+<button title="Modifier" aria-label="Modifiez" onclick="ModifierVoyage()" class="cursor-pointer">
   <i class="ri-edit-line"></i>
 </button>
+
 
 
   <div class="hidden ml-8 sm:flex sm:w-full pl-1 font-bold pt-1 font-stretch-100% ">
