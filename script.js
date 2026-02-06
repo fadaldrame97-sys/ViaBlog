@@ -43,8 +43,7 @@ voyages.push(voyage);
   console.log(titr,destination);
   console.log("form:", formDestination);
 
-
-    titr.textContent = voyage.titre;
+  titr.textContent = voyage.titre;
   destination.textContent = voyage.destination;
   cat.textContent = voyage.categories;
   img.src = voyage.image;
